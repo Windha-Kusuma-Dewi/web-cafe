@@ -36,7 +36,7 @@ Route::patch('/cafes/edit/{id}', [CafeController::class, 'update'])->name('cafes
 
 //halaman user
 Route::get('/user', [UserController::class, 'index'])->name('user');
-Route::get('/user/add', [UserController::class, 'create'])->name('user.add');
+Route::get('/user/tambah', [UserController::class, 'create'])->name('user.tambah');
 Route::post('/user/tambah', [UserController::class, 'store'])->name('user.tambah.store');
 Route::get('/user/edit/{id}', [UserController::class, 'edit'])->name('user.edit');
 Route::patch('/user/edit/{id}', [UserController::class, 'update'])->name('user.edit.update');
